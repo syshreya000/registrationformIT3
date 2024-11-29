@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Register.css"/>
+        <title> Register </title>
+</head>
+<body>
+    <div class="formreg" novalidate>
+        <form id="regform" >
+          
+            <H1>Register</H1>
+          
+            <div>Create your account. It's free and only takes a minute. </div>
+          
+            <div class="forms">
+          
+            <input type="text" id="fname" placeholder="First Name"/>
+
+            <div class="error-message" id="fname-error">Required</div>
+            
+            <input type="text" id="lname" placeholder="Last Name"/>
+            
+            <div class="error-message" id="lname-error">Required</div>
+
+           </div>
+           
+            <input type="email" id="email" placeholder="E-mail"/>
+            
+            <div class="error-message" id="email-error">Please enter a valid email address.</div>
+
+            <input type="password" id="pass" placeholder="Password"/>
+            
+            <div class="error-message" id="pass-error">Password must be 8 characters long.</div>
+            
+            <input type="password" id="cpass" placeholder="Confirm Password"/>
+            
+            <div class="error-message" id="cpass-error">Passwords do not match.</div>
+        
+            <div class="labelclass">
+            
+                <input type="checkbox" id="tnc"/>
+            
+                <div class="error-message" id="tnc-error">Please accept the terms and conditions.</div>
+            
+                <label for="tnc">I accept the <a href="#">Terms of Use </a> and <a href="#"> Privacy Policy</a></label>
+            </div>
+    
+            <button id="button" type="submit">Register Now</button>
+        </div>
+        </form>
+    </div>
+
+</body>
+<script src="Register.js"></script>
+</html>
